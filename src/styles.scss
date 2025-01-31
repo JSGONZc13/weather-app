@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+// Colores principales
+$primary-color: #bd3354; // Verde principal
+$primary-dark-color: #761f34; // Verde oscuro para el estado activo
+$primary-light-color: #d793a3; // Verde claro para el hover
+$background-color: #fcfcfc; // Fondo claro
+$text-color-dark: #191919; // Color oscuro para texto
+$text-color-light: #494949; // Color para texto secundario
+$input-border-color: #494949; // Color del borde del input
+$input-focus-border-color: $primary-color; // Color del borde del input en focus
+$result-background-color: #f4f4f4; // Fondo de la sección de resultados
+$result-border-color: #f4f4f4; // Borde de la sección de resultados
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

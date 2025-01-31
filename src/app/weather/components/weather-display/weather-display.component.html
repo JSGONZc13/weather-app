@@ -1,1 +1,15 @@
-<h1>weather-display works!</h1>
+<div class="weather-container">
+  <h2>Consulta la edad estimada</h2>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Ingrese un nombre</mat-label>
+    <input matInput [(ngModel)]="name" placeholder="Ej: Luis">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getAge()">Consultar</button>
+
+  <div *ngIf="ageData" class="result">
+    <p><strong>Nombre:</strong> {{ ageData.name }}</p>
+    <p><strong>Edad estimada:</strong> {{ ageData.age }}</p>
+    <p><strong>Ocurrencias:</strong> {{ ageData.count }}</p>
+  </div>
+</div>
